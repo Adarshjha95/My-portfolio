@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* height: 100px;
+            width: 100px; */
+            background-color:black
+        }
+        #t{
+            border-radius: 50%;
+            position: absolute;
+            /* left:600px; */
+            /* top: 190px; */
+            height: 100px;
+            width: 100px;
+        }
+        /* @keyframes moving{
+
+        }
+        0%{           
+                transform: rotate(0deg);
+                border-radius: 0px
+            }
+            50%{
+                transform: rotate(180deg);
+                border-radius: 50%;
+            }
+            100%{
+                transform: rotate(360deg);
+                border-radius: 0px;
+            } */
+
+        
+        #blade{
+            clip-path: polygon(50% 0%, 100% 20%, 60% 100%, 40% 100%, 0% 20%);
+            height: 150px;
+            width: 100px;
+            position: absolute;
+            bottom: 100px;
+            background-color: rgb(23, 22, 29);
+        }
+        #blade2{
+            clip-path: polygon(50% 0%, 100% 20%, 60% 100%, 40% 100%, 0% 20%);
+            height: 150px;
+            width: 100px;
+            position: absolute;
+            left: -100px;
+            top:25px;
+            /* bottom: 0; */
+            transform: rotate(240deg);
+            background-color: rgb(19, 19, 19);
+        }
+        #blade3{
+            clip-path: polygon(50% 0%, 100% 20%, 60% 100%, 40% 100%, 0% 20%);
+            height:150px ;
+            width: 100px;
+            position: absolute;
+            left:100px ;
+            top:25px;
+            transform: rotate(120deg);
+            background-color: rgb(11, 11, 11);
+        }
+        #stick{
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            height:300px;
+            width: 100px;
+            position: absolute;
+            left: 550px;
+            top: 390px;
+            /* transform: rotate(207deg); */
+        }
+        body{
+            background-color: skyblue;
+            overflow: hidden;
+            height: 100vh;
+        }
+        /* #k{
+            clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 100% 100%, 0% 100%);
+        }
+
+        #hexagon{
+            clip-path: polygon(50% 0%, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);
+        }
+        #t{
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        } */
+
+        #fan{
+            position: relative;
+            height: 10px;
+            height: 100px;
+            aspect-ratio: 1;
+            top: 330px;
+            left: 545px;
+            border-radius: 50%;
+            /* background-color: transparent; */
+             animation: rotate 2s linear infinite; 
+        }
+
+        @keyframes rotate {
+            from {
+                tranform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+</head>
+<body>
+     <!-- <div id="k"></div>
+    <div id="hexagon"></div>
+    <div id="t">triangel</div>  -->
+    
+    <div id="fan">
+        <!-- <div id="t"></div> -->
+        <div id="blade"></div>
+        <div id="blade2"></div>
+        <div id="blade3"></div>
+    </div>
+    <div id="stick"></div>
+</body>
+</html>
